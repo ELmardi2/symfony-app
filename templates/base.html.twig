@@ -2,11 +2,88 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            {% block title %}Welcome!{% endblock %}
+        </title>
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css?family=Raleway:300,400,600"
+            rel="stylesheet"
+            type="text/css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="https://bootswatch.com/4/united/bootstrap.min.css"/>
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+    <div class="container">
+        <div id="app">
+            <nav class="navbar navbar-expand-md navbar-light  navbar-laravel bg-info">
+                <div class="container ">
+                    <a class="navbar-brand logo" href="#">Life-booknote</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <!-- Left Side Of Navbar -->
+                        <ul class="navbar-nav mr-auto float">
+                            <li>
+                                <a href="#" class=" btn btn-secondary">Home</a>
+                            </li>
+                            &nbsp;
+                            <li>
+                                <a href="#" class=" btn btn-secondary">About-us</a>
+                            </li>
+                            &nbsp;
+                            <li>
+                                <a href="#" class=" btn btn-secondary">Articless</a>
+                            </li>
+                            &nbsp;
+                            <li>
+                                <a href="#" class=" btn btn-secondary">Stories</a>
+                            </li>
+                            &nbsp;
+                            <li>
+                                <a href="#" class=" btn btn-secondary">Booknotes</a>
+                            </li>
+                            &nbsp;
+                            <li>
+                                <a href="#" class=" btn btn-secondary">Contact-us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <hr>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
+        <!-- Footer -->
+   <footer id="footer" class=" bg-dark text-white p-4 mt-5 text-center">
+        <p>All rights reserved To Elmardi YAHIA </p>
+      </footer>
+        </div>
     </body>
 </html>

@@ -1,0 +1,27 @@
+{#// /extends my main page which contains navbar footer ....etc*/#}
+{% extends 'base.html.twig' %}
+{% block body %}
+{# Header Page title #}
+<h1>Welcome To Contact-Us Page </h1>
+<form action="#" method="POST">
+    <div class="form-group">
+        <label for="title">Name</label>
+        <input type="text" name="name" id="Name" class="form-control" placeholder="type your name here">
+    </div>
+    <div class="form-group">
+            <label for="title">E-mail</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="type your email here">
+        </div>
+        <div class="form-group">
+                <label for="title">Subject</label>
+                <input type="text" name="subject" id="subject" class="form-control" placeholder="type your subject here">
+            </div>
+    <div class="form-group">
+        <label for="title">Write Your message</label>
+        <textarea name="content" id="content" class="form-control" cols="30" rows="10" placeholder="type your message here"></textarea>
+    </div>
+    <div class="form-group">
+    <button type="submit" class="btn btn-outline-primary"> Send</button>
+    </div>
+    </form>
+{% endblock %}

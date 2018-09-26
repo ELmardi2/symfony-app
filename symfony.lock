@@ -89,6 +89,9 @@
     "egulias/email-validator": {
         "version": "2.1.5"
     },
+    "endroid/image-placeholder-bundle": {
+        "version": "1.2.0"
+    },
     "fig/link-util": {
         "version": "1.0.0"
     },

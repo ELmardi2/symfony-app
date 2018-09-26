@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c649dbcd34abf05325904e338f6d1dc",
+    "content-hash": "bc6d8ec02ec3a724cdc98481f67da5a4",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1226,6 +1226,63 @@
                 "validator"
             ],
             "time": "2018-08-16T20:49:45+00:00"
+        },
+        {
+            "name": "endroid/image-placeholder-bundle",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/endroid/image-placeholder-bundle.git",
+                "reference": "7cd3f910f6ec3b20b89b686bfe9a0a5be1dadb87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/endroid/image-placeholder-bundle/zipball/7cd3f910f6ec3b20b89b686bfe9a0a5be1dadb87",
+                "reference": "7cd3f910f6ec3b20b89b686bfe9a0a5be1dadb87",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Endroid\\Bundle\\ImagePlaceholderBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen van den Enden",
+                    "email": "info@endroid.nl",
+                    "homepage": "http://endroid.nl/"
+                }
+            ],
+            "description": "Endroid Image Placeholder Bundle for Symfony",
+            "homepage": "https://github.com/endroid/EndroidImagePlaceholderBundle",
+            "keywords": [
+                "Unsplash",
+                "bundle",
+                "endroid",
+                "image",
+                "placehold",
+                "placeholder",
+                "placekitten",
+                "symfony"
+            ],
+            "abandoned": "endroid/image-placeholder",
+            "time": "2017-01-01T15:08:21+00:00"
         },
         {
             "name": "fig/link-util",

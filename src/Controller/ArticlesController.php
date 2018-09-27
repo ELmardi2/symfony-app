@@ -6,6 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Entity\Article;
 use App\Repository\ArticleRepository;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class ArticlesController extends AbstractController
 {
@@ -22,6 +26,13 @@ class ArticlesController extends AbstractController
             'controller_name' => 'ArticleController',
             'articles' =>$articles,
         ]);
+    }
+     /**
+     * @Route("/articles/new", name="create_article")
+     */
+    public function create()
+    {
+        return $this->render('/articles/create.html.twig');
     }
       /**
      * @Route("/articles/{id}", name="articles_show")

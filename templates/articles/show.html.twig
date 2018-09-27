@@ -2,8 +2,7 @@
 {% extends 'base.html.twig' %}
 {% block body %}
     {# Header Page title #}
-    <h1 class="text-center">Welcome To Article details Page
-    </h1>
+    <h1 class="text-center">Welcome To Article details Page</h1>
         <div class="card p-4">
             <div class="card-header">
                 <h3>{{ article.title }}</h3>
@@ -20,7 +19,5 @@
                 {{ article.createdAt | date('Y/m/d') }}
                 At :
                 {{ article.createdAt |  date('H:i')}}</strong>
-
         </div>
-
 {% endblock %}

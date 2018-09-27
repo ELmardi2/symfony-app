@@ -1,0 +1,8 @@
+  <a href="{{path('create_article') }}" class="btn btn-info">Create New Articles</a>
+    /**
+     * @Route('/articles/new', name="create_article")
+     */
+    public function create()
+    {
+        return $this->render('/articles/create.html.twig');
+    }

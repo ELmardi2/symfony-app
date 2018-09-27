@@ -2,8 +2,8 @@
 {% extends 'base.html.twig' %}
 {% block body %}
     {# Header Page title #}
-    <h1 class="text-center">Welcome To Article details Page
-    </h1>
+    <h1 class="text-center">Welcome To Article details Page</h1>
+    <a href="{{path('create_article') }}" class="btn btn-info">Create New Articles</a>
     {% for article in articles %}
         <div class="card p-4">
             <div class="card-header">

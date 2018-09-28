@@ -3,5 +3,15 @@
 {% block body %}
     {# Header Page title #}
     <h1 class="text-center">Welcome To Add New Article  Page</h1>
+    {% form_theme formArticle 'bootstrap_4_layout.html.twig' %}
+    {# templates/default/new.html.twig #}
+    {{ form_start(formArticle) }}
+    {{ form_widget(formArticle) }}
+        {{ form(formArticle) }} 
+        <button class="btn btn-info" type="submit">Save</button>
+    {{ form_end(formArticle) }}
+
+    
+
 
 {% endblock %}
